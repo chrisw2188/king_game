@@ -7,8 +7,14 @@ class TestCards < Minitest::Test
     @cards = Cards.new( ["gold", "poison","lemon", "poison"] )
   end
 
-  def test_cards
-    assert_equal("poison", @cards.cards)
+  # def test_cards
+  #   assert_equal("poison", @cards.cards)
+  # end
+
+  def test_shuffle
+    assert_equal(["gold", "poison","lemon", "poison"], @cards.shuffle)
   end
+
+  
 
 end

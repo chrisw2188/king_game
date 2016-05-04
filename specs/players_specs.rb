@@ -6,8 +6,8 @@ require_relative("../cards")
 class TestPlayer < Minitest::Test
 
   def setup
-   @player1 = Players.new("Jeff", 0)
-   @player2 = Players.new("Chris", 0)
+   @player1 = Players.new("Jeff", 3)
+   @player2 = Players.new("Chris", 3)
   end
 
   def test_players
